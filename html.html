@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
-    <link rel="shortcut icon" href="./images/fruits.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<style>
+    font {
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+
+<body class=".font">
+    <header>
+        <nav class="max-w-screen-xl mx-auto px-8 my-10 ">
+            <div class="navbar  bg-[#F85559] rounded-[600px] py-3  text-white justify-between px-3">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </ul>
+                  </div>
+        
+                <div class="navbar-center">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul class="menu px-1 text-black">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-[40px] flex-1  "><img class="w-[40px]" src="./images/logo.png"
+                    alt=""> Fruit Burst</a>
+                </div>
+                
+                <div class="navbar-end hidden md:flex">
+                    <div class="relative">
+                        <input  type="text" placeholder="Search here " class="input input-bordered text-black  md:w-auto rounded-[500px]  " />
+                        <div class="absolute opacity-50 left-44 top-3.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            
+        </nav>
+        <section>
+            
+        </section>
+    </header>
 </body>
+
 </html>
