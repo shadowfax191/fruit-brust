@@ -20,7 +20,7 @@
 
 <body class="font">
     <header>
-        <nav class="max-w-screen-xl mx-auto px-8 my-10 ">
+        <nav class="max-w-screen-xl mx-auto px-8 my-10 hidden md:flex ">
             <div class="navbar  bg-[#F85559] rounded-[600px] py-3  text-white justify-between px-3">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -75,6 +75,33 @@
 
 
         </nav>
+        <section class="md:hidden flex ">
+            <div class="flex justify-between pt-7 mx-auto ">
+                <div class="flex-1"><a class="btn btn-ghost normal-case text-[25px] flex-1  "><img class="w-[40px]"
+                    src="./images/logo.png" alt=""> Fruit Burst</a></div>
+                <div>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                            <ul class="menu px-1 text-black">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
         <section class=" max-w-screen-xl mx-auto px-8 my-10">
             <div class="carousel w-full rounded-lg">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -82,8 +109,8 @@
                         style="background-image:linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),  url(./images/banner1.png);">
                         <div class="hero-overlay "></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-lg py-40 text-white">
-                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <div class="max-w-lg md:py-40 py-9 text-white">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
                                 <button class="btn btn-secondary bg-[#F85559] text-white rounded-lg border-none">Shop
                                     Now</button>
@@ -101,8 +128,8 @@
                         style="background-image:linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),  url(./images/banner2.png);">
                         <div class="hero-overlay "></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-lg py-40 text-white">
-                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <div class="max-w-lg md:py-40 py-9 text-white">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
                                 <button class="btn btn-secondary bg-[#F85559] text-white rounded-lg border-none">Shop
                                     Now</button>
@@ -119,8 +146,8 @@
                         style="background-image:linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),  url(./images/banner3.png);">
                         <div class="hero-overlay "></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-lg py-40 text-white">
-                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <div class="max-w-lg md:py-40 py-9 text-white">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
                                 <button class="btn btn-secondary bg-[#F85559] text-white rounded-lg border-none">Shop
                                     Now</button>
@@ -137,8 +164,8 @@
                         style="background-image:linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),  url(./images/banner4.png);">
                         <div class="hero-overlay "></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-lg py-40 text-white">
-                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <div class="max-w-lg md:py-40 py-9  text-white">
+                                <h1 class="mb-5 text-5xl font-bold ">Exotic tastes at your <br> doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
                                 <button class="btn btn-secondary bg-[#F85559] text-white rounded-lg border-none">Shop
                                     Now</button>
@@ -179,7 +206,7 @@
     <main>
         <section
             class="max-w-screen-xl mx-auto px-8 mt-32 flex flex-col lg:flex-row items-center justify-between lg:gap-52 gap-6">
-            <div class="">
+            <div class="lg:text-left text-center">
                 <h3 class="text-5xl font-bold pb-3">Deal of the day</h3>
                 <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                     Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -832,13 +859,13 @@
             </div>
         </section>
     </main>
-    <footer class="bg-[#121212]  mx-auto px-8 mt-20">
-        <section class="text-white py-20 lg:max-w-2xl  mx-auto px-5 ">
+    <footer class="bg-[#121212]  mx-auto px-3 md:px-8 mt-20">
+        <section class="text-white py-20 lg:max-w-2xl  mx-auto md:px-5 ">
             <div class="text-center">
-                <a class="btn btn-ghost normal-case text-[40px] flex-1 "><img class="w-[40px]" src="./images/logo.png"
+                <a class="btn btn-ghost normal-case text-[25px] md:text[40px] flex-1 "><img class="w-[40px]" src="./images/logo.png"
                         alt=""> Fruit Burst</a>
             </div>
-            <ul class="grid grid-cols-4 md:grid-cols-6 text-center pt-7 gap-3 items-center">
+            <ul class="grid grid-cols-4 md:grid-cols-6 text-center pt-7 gap-2 items-center">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Shop</a></li>
@@ -847,7 +874,7 @@
                 <li class="col-span-2 mx-auto md:col-span-1"><a href="">My Account</a></li>
             </ul>
 
-            <ul class="grid grid-cols-6 text-center gap-4 pt-10 md:px-20">
+            <ul class="grid grid-cols-6 text-center gap-4 pt-10 md:px-20 px-6">
                 <li><a href="">
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                             viewBox="0 0 40 40" fill="none">
