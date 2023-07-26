@@ -75,13 +75,14 @@
 
 
         </nav>
+        <!-- nav for mobile -->
         <section class="md:hidden flex ">
             <div class="flex justify-between pt-7 mx-auto ">
                 <div class="flex-1"><a class="btn btn-ghost normal-case text-[25px] flex-1  "><img class="w-[40px]"
                     src="./images/logo.png" alt=""> Fruit Burst</a></div>
                 <div>
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <div class="dropdown text-right">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden text-right">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -89,13 +90,26 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
-                            <ul class="menu px-1 text-black">
-                                <li><a>Home</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>Shop</a></li>
-                                <li><a>All Fruits</a></li>
+                            class=" space-y-3 dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box  text-left justify-end">
+                            <ul class=" text-black  text-sm items-start space-y-3 p-2">
+                                <li class="pt-2"><a>Home</a></li>
+                                <li class=""><a>About Us</a></li>
+                                <li class=""><a>Shop</a></li>
+                                <li class=""><a>All Fruits</a></li>
                             </ul>
+                            <div class="relative pt-1 p-2 ">
+                                <input type="text" placeholder="Search "
+                                    class=" border border-black text-black  rounded-[500px] w-[72px] justify-end px-1 py-1 text-sm bg-gray-300" />
+                                <div class="absolute opacity-50 left-[60px] top-3.5">
+                                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                                            stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></a>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
